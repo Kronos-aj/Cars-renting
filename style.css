@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+
+/* ---------------main container--------------- */
+
+.container{
+    display: flex;
+    margin: 100px;
+    height: 450px;
+    flex-direction: rows;
+    
+    
+
+}
+
+/* ---------------sub-containers-------------- */
+
+.right{
+    background-color: hsl(31, 77%, 52%);
+    flex: 30%;
+    border-radius: 10px 0px 0px 10px;  
+}
+.middle{
+    background-color: hsl(184, 100%, 22%);
+    flex: 30%;
+}
+.left{
+    background-color: hsl(179, 100%, 13%);
+    flex: 30%;
+    border-radius: 0px 10px 10px 0px;
+}
+
+/* ---------------icon part---------------- */
+.icon{
+    padding: 40px;
+}
+/* --------------- car's name-------------- */
+.name{
+    color: hsl(0, 0%, 95%);
+    padding: 35px;
+    font-size: 30px;
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-weight: 700;
+    
+}
+/* ------------note------------------- */
+.note{
+    color:  hsla(0, 0%, 100%, 0.75);
+    padding: 35px;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+/* -------------button------------------ */
+.button-position{
+    display: flex;
+    justify-content: center;
+}
+.left-button{
+    
+    left: 50%;
+    background-color: white;
+    align-self: center;
+    color: hsl(31, 77%, 52%); 
+    border: 2px solid white; 
+    border-radius: 25px;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+.middle-button{
+    
+    left: 50%;
+    background-color: white;
+    align-self: center;
+    color: hsl(184, 100%, 22%); 
+    border: 2px solid white;  
+    border-radius: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+.right-button{
+    
+    left: 50%;
+    background-color: white;
+    align-self: center;
+    color: hsl(179, 100%, 13%);
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 10px;
+    cursor: pointer;
+       
+}
+
+/* -----------------------hover option--------------- */
+.left-button:hover{
+    color: white;
+    background-color:hsl(31, 77%, 52%);  
+    border: 2px solid white;
+}
+.middle-button:hover{
+    color: white;
+    background-color:hsl(184, 100%, 22%);  
+    border: 2px solid white;
+}
+.right-button:hover{
+    color: white;
+    background-color:hsl(179, 100%, 13%);
+    border: 2px solid white;
+}
+
+/* ---------------mobile setting------------ */
+@media (max-width: 800px) {
+    .container{
+        flex-direction: column;
+    }
+    .right,.middle ,.left {
+      flex: 100%;
+    }
+  }
