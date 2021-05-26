@@ -16,7 +16,10 @@ header{
     font-size: 20px;
 }
 /* ------------------navigation bar------------------ */
-
+nav{
+    position: sticky;
+    top: 0;
+}
 ul {
     
     list-style-type: none;
